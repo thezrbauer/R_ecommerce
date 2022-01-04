@@ -13,7 +13,19 @@ body {
 
 header {
   display:flex;
-  
+  margin:2rem;
   justify-content:center;
 
 }
+
+
+h1 {
+  display:inline;
+}
+
+p{
+  display:inline;
+  margin:1rem;
+}
+
+
