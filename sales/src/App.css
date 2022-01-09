@@ -14,18 +14,86 @@ body {
 header {
   display:flex;
   margin:2rem;
-  justify-content:center;
-
+  justify-content:space-around;
+  width:100%;
 }
 
-
+.assy {
+  background-color: chartreuse;
+  width:auto;
+  justify-content: left;
+}
 h1 {
   display:inline;
 }
 
-p{
+li{
   display:inline;
   margin:1rem;
 }
 
+
+
+/*  Body content  */
+
+.content {
+  display:grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 400px);
+  margin-top:6rem;
+  width:100%;
+  
+}
+
+/* left side of the screen, grid for images. */
+
+.image-model {
+  /* background-color: bisque; */
+ display:grid;
+ grid-template-columns:repeat(4, 60px);
+ grid-auto-rows: 60px;
+ grid-gap:1rem;
+ margin:1rem;
+ width:auto;
+ height:auto;
+}
+
+.img {
+  width:100%;
+  height:100%;
+  border-radius:10px;
+}
+
+.img-product {
+ grid-column: 1/5;
+ grid-row:1/5
+}
+
+
+/* Right side of the screen, product name, product description. */
+
+.product-info {
+ 
+  width:auto;
+  height:auto;
+  padding-top:3rem;
+}
+
+
+.company-name {
+  color:orange;
+  font-size:12px;
+  margin:1rem auto;
+}
+
+.product-name {
+  color:black;
+  font-size:38px;
+  line-height: 40px;
+}
+
+.product-description {
+  margin:1rem auto;
+  color:gray;
+}
 
