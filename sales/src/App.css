@@ -12,17 +12,29 @@ body {
 }
 
 header {
-  display:flex;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
   margin:2rem;
-  justify-content:space-around;
-  width:100%;
+  justify-content: center;
+  width:80%;
+  margin:2rem auto;
 }
 
-.assy {
-  background-color: chartreuse;
+.logo-wrapper {
+  
   width:auto;
   justify-content: left;
 }
+
+.logo {
+  width:150px;
+
+}
+
+.wrapper {
+
+}
+
 h1 {
   display:inline;
 }
@@ -30,9 +42,39 @@ h1 {
 li{
   display:inline;
   margin:1rem;
+  
+}
+
+a {
+  text-decoration: none;
+  color:gray;
 }
 
 
+.icon-wrapper {
+ display:flex;
+ gap:3rem;
+ align-items: center;
+ margin-top:-.5rem;
+ 
+}
+
+.avatar > img{
+  width:45px;
+  height:45px;
+  cursor:pointer;
+}
+
+.avatar > img:hover {
+  border: 1px orange solid;
+  border-radius:25px;
+}
+
+.cart > img{
+  width:20px;
+  height:20px;
+  cursor:pointer;
+}
 
 /*  Body content  */
 
@@ -40,9 +82,8 @@ li{
   display:grid;
   justify-content: center;
   grid-template-columns: repeat(2, 400px);
-  margin-top:6rem;
   width:100%;
-  
+  gap:7rem;
 }
 
 /* left side of the screen, grid for images. */
@@ -50,8 +91,8 @@ li{
 .image-model {
   /* background-color: bisque; */
  display:grid;
- grid-template-columns:repeat(4, 60px);
- grid-auto-rows: 60px;
+ grid-template-columns:repeat(4, 80px);
+ grid-auto-rows: 80px;
  grid-gap:1rem;
  margin:1rem;
  width:auto;
@@ -97,3 +138,36 @@ li{
   color:gray;
 }
 
+
+.markdown {
+ 
+}
+
+.markdown-box {
+ display:flex;
+ width:auto;
+ 
+}
+
+.markdown-percent{
+  color:orange;
+  background-color:beige;
+  margin: auto 1rem;
+  font-size:14px;
+  font-weight: bold;
+  padding:2px;
+}
+
+
+
+.original-price {
+  color:gray;
+  margin:.5rem auto;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+
+.minus{
+  color:red;
+}
