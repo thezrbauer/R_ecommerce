@@ -167,7 +167,37 @@ a {
   font-weight: bold;
 }
 
+/*  Button container styles */
 
-.minus{
-  color:red;
+.btn-box {
+  display:flex;
+  background-color:purple;
+  margin-top:3rem;
 }
+
+
+
+.minus, .plus, .quantity{
+  background-color: goldenrod;
+  padding:1.2rem;
+}
+
+
+.add-to-cart {
+  grid-column: 1/10;
+  width:auto;
+  
+ }
+
+ .add-cart-btn {
+  width:300px;
+  padding:1rem;
+  margin: auto 1rem;
+  color:white;
+  background-color: orange;
+ }
+
+ .cart-img {
+   color:white;
+   background-color: white;
+ }

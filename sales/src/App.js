@@ -57,11 +57,11 @@ function App() {
           </div>
           <p className="original-price">$250.00</p>
           
-          <div className="">
-            <div className="" ><span className="minus" data-src={minusIcon}></span></div>
-            <div className=""><span className=""></span></div>
-            <div className=""><span className=""></span></div>
-            <div className=""><span className=""></span></div>
+          <div className="btn-box">
+            <div className="" ><button className="minus"><img  src={minusIcon}></img></button></div>
+            <div className=""><button className="quantity">4</button></div>
+            <div className=""><button className="plus"><img  src={plusIcon}></img></button></div>
+            <div className="add-to-cart"><button className="add-cart-btn"><img className="cart-img" src={cartLogo}></img>Add to cart</button></div>
 
 
           </div>
