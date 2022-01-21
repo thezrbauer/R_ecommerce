@@ -9,7 +9,7 @@ import { ProductViewer } from "./styles/ProductView.styled"
 export default function ProductView() {
     return (
         <ProductViewer>
-            <div className="img-product grid-item" ><img className="img" src={imageProduct}></img></div>
+            <div className="img-product" ><img className="img" src={imageProduct}></img></div>
             <div className="img-product1 grid-item"><img className="img" src={imageProduct1} alt="item-1"></img></div>
             <div className="img-product2 grid-item"><img className="img" src={imageProduct2} alt="item-2"></img></div>
             <div className="img-product3 grid-item"><img className="img" src={imageProduct3} alt="item-3"></img></div>

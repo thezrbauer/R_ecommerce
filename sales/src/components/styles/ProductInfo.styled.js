@@ -16,7 +16,7 @@ padding-top:3rem;
   
   .product-description {
     margin:1rem auto;
-    color:gray;
+    color:${({theme})=> theme.colors.darkGrayishBlue};
   }
   
   
@@ -32,7 +32,7 @@ padding-top:3rem;
   
   .markdown-percent{
     color:orange;
-    background-color:beige;
+    background-color:${({theme})=> theme.colors.paleOrange};
     margin: auto 1rem;
     font-size:14px;
     font-weight: bold;
@@ -42,7 +42,7 @@ padding-top:3rem;
   
   
   .original-price {
-    color:gray;
+    color:${({theme})=> theme.colors.darkGrayishBlue};
     margin:.5rem auto;
     text-decoration: line-through;
     font-weight: bold;

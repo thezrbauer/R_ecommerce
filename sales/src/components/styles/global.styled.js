@@ -27,7 +27,7 @@ h1 {
   
   a {
     text-decoration: none;
-    color:gray;
+    color:${({theme})=> theme.colors.darkGrayishBlue};
   }
   
 
