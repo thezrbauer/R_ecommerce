@@ -24,6 +24,11 @@ justify-content: left;
 
 export const Wrapper = styled.div`
 
+@media only screen and (max-width: 600px) { 
+display:none;
+
+}
+
 `
   
 export const IconWrapper = styled.div`

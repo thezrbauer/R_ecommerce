@@ -12,7 +12,7 @@ gap:7rem;
 @media only screen and (max-width: 600px) { 
   grid-template-columns: 1fr;
   gap:0rem;
-  background-color: red;
+  
 }
 
 

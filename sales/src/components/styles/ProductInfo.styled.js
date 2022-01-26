@@ -21,7 +21,7 @@ padding-top:3rem;
   
   
   .markdown {
-   
+   font-size:28px;
   }
   
   .markdown-box {
@@ -31,18 +31,19 @@ padding-top:3rem;
   }
   
   .markdown-percent{
-    color:orange;
+    color:${({theme})=> theme.colors.regularOrange};
     background-color:${({theme})=> theme.colors.paleOrange};
     margin: auto 1rem;
-    font-size:14px;
+    font-size:12px;
     font-weight: bold;
-    padding:2px;
+    border-radius:4px;
+    padding:4px;
   }
   
   
   
   .original-price {
-    color:${({theme})=> theme.colors.darkGrayishBlue};
+    color:${({theme})=> theme.colors.grayishBlue};
     margin:.5rem auto;
     text-decoration: line-through;
     font-weight: bold;
@@ -50,12 +51,14 @@ padding-top:3rem;
   
   /*  Button container styles */
   
-  .btn-box {
+  .desk_btns {
     display:flex;
-   
     margin-top:2rem;
   }
   
+  .mob_btns {
+    display:none;
+  }
   
   
   .minus, .plus, .quantity{
@@ -105,6 +108,76 @@ padding-top:3rem;
      height:18px;
   
    }
+
+   @media only screen and (max-width: 600px) { 
+    margin:0rem 4rem 5rem;
+    
+    .mob__inline {
+      display:flex;
+     
+      align-items:center;
+    }
+
+    .mob__inline .original-price {
+      margin-left:12rem;
+      margin-top:-2px;
+    }
+
+  
+    .desk_btns, .minus, .plus, .quantity {
+      display:none;
+    }
+
+    .mob_btns {
+      display:grid;
+      justify-content:center;
+      align-items:center;
+      grid-template-columns: repeat(4, 1fr);
+      background-color:red;
+      width:auto;
+    }
+    .mob_minus, .mob_plus, .mob_quantity {
+        background-color: whitesmoke;
+        border:1px whitesmoke solid;
+        padding:1rem;
+        width:100%;
+    }
+
+    .mob_minus {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    
+    .mob_plus {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .mob_quantity {
+    
+    }
+
+    .mob_add-to-cart {
+      grid-column: 1/10;
+      width:100%;
+    }
+
+      
+    .mob_add-cart-btn {
+      width:250px;
+      padding:.9rem;
+      margin: auto 1rem;
+      color:white;
+      background-color: orange;
+      border-radius: 10px;
+      border:1px orange solid;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      gap:14px;
+    }
+   }
+
 `
 
 export const CompanyName = styled.h3`
