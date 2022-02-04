@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 
 export const ProductViewer = styled.div` 
+
   .desktop {
     display:grid;
     grid-template-columns:repeat(4, 80px);
@@ -33,7 +34,6 @@ export const ProductViewer = styled.div`
   }
 
   .img {
- 
     border-radius:0px;
   }
 
@@ -44,19 +44,18 @@ export const ProductViewer = styled.div`
   .slider-mob__item img{
     width: 100%;
     object-fit: cover;
+    height:50vh;
     }
 
   .slider-mob{
     position: relative;
     display:inline;
-    height:80vh;
+ 
 }
 
 .slider-mob__control {
-
   position:absolute;
-  
-  top:10rem;
+  top:12rem;
   height:auto;
   width:100%;
   margin:1rem;
@@ -78,13 +77,13 @@ export const ProductViewer = styled.div`
 .slider-mob__next-btn {
 float:right;
 margin-top:-3.5rem;
-right:-29rem;
+right:-32rem;
 }
 .slider-mob__next-btn img {
   width: 1rem;
 }
 .slider-mob__prev-btn  {
-
+  right:-2rem;
 }
 
 .slider-mob__prev-btn img {

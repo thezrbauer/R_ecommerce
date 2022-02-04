@@ -1,5 +1,5 @@
 import React from 'react'
-import {Heading, LogoWrapper, Wrapper, IconWrapper} from './styles/Header.styled'
+import {Heading, LogoWrapper, Wrapper, IconWrapper, BurgerWrapper} from './styles/Header.styled'
 import logo from '../images/logo.svg'
 import avatar from "../images/image-avatar.png"
 import cartLogo from "../images/icon-cart.svg"
@@ -7,6 +7,29 @@ import cartLogo from "../images/icon-cart.svg"
 export default function Header() {
     return (
         <Heading>
+          <BurgerWrapper>
+          <nav role="navigation">
+                <div id="menuToggle">
+                
+                  <input type="checkbox" />
+                  
+                
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                
+                  <ul id="menu">
+                    <a href="#"><li>Collections</li></a>
+                    <a href="#"><li>Men</li></a>
+                    <a href="#"><li>Women</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Contact</li></a>
+                   
+                  </ul>
+                </div>
+                  </nav>
+          </BurgerWrapper>
         <LogoWrapper>
              <img className="logo" src={logo} alt="logo"></img>
            </LogoWrapper>

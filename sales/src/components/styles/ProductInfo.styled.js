@@ -16,6 +16,7 @@ padding-top:3rem;
   
   .product-description {
     margin:1rem auto;
+    line-height: 26px;
     color:${({theme})=> theme.colors.darkGrayishBlue};
   }
   
@@ -62,21 +63,33 @@ padding-top:3rem;
   
   
   .minus, .plus, .quantity{
-    background-color: whitesmoke;
-    border:1px whitesmoke solid;
+    background-color: ${({theme})=> theme.colors.lightGrayishBlue};
+    border:1px ${({theme})=> theme.colors.lightGrayishBlue} solid;
     padding:1rem;
   }
   
+  
+
+
   .minus {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
-  
+  .minus:hover {
+    background-color:hsl(223, 64%, 98%, .8);
+    border: hsl(223, 64%, 98%, .8);
+  }
+
   .plus {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+  .plus:hover {
+    background-color:hsl(223, 64%, 98%, .8);
+    border: hsl(223, 64%, 98%, .8);
+  }
   
+ 
   
   .add-to-cart {
     grid-column: 1/10;
@@ -89,13 +102,18 @@ padding-top:3rem;
     padding:.9rem;
     margin: auto 1rem;
     color:white;
-    background-color: orange;
+    background-color: ${({theme})=> theme.colors.regularOrange};
     border-radius: 10px;
-    border:1px orange solid;
+    border:1px ${({theme})=> theme.colors.regularOrange} solid;
     display:flex;
     justify-content: center;
     align-items: center;
     gap:14px;
+   }
+
+   .add-cart-btn:hover {
+     background-color:hsl(26, 100%, 55%, .8);
+     border: hsl(26, 100%, 55%, .8);
    }
   
    .btn-txt {
@@ -132,15 +150,24 @@ padding-top:3rem;
       display:grid;
       justify-content:center;
       align-items:center;
-      grid-template-columns: repeat(4, 1fr);
-      background-color:red;
+      grid-template-columns: 1, 1fr;
+      grid-template-rows: 2, 1fr;
+      gap:1rem;
+      margin-top:1.5rem;
       width:auto;
     }
+
+    .mob_grid-help {
+      display:flex;
+      justify-content:center;
+      width:100%;
+    }
+
     .mob_minus, .mob_plus, .mob_quantity {
-        background-color: whitesmoke;
-        border:1px whitesmoke solid;
+        background-color: ${({theme})=> theme.colors.lightGrayishBlue};
+        border:1px ${({theme})=> theme.colors.lightGrayishBlue} solid;
         padding:1rem;
-        width:100%;
+        width:15vh;
     }
 
     .mob_minus {
@@ -158,19 +185,18 @@ padding-top:3rem;
     }
 
     .mob_add-to-cart {
-      grid-column: 1/10;
       width:100%;
     }
 
       
     .mob_add-cart-btn {
-      width:250px;
+      width:45vh;
       padding:.9rem;
       margin: auto 1rem;
       color:white;
-      background-color: orange;
+      background-color: ${({theme})=> theme.colors.regularOrange};
       border-radius: 10px;
-      border:1px orange solid;
+      border:1px ${({theme})=> theme.colors.regularOrange} solid;
       display:flex;
       justify-content: center;
       align-items: center;
