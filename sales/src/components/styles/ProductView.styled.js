@@ -48,42 +48,46 @@ export const ProductViewer = styled.div`
     }
 
   .slider-mob{
-    position: relative;
+    position:relative;
     display:inline;
  
 }
 
 .slider-mob__control {
-  position:absolute;
-  top:12rem;
-  height:auto;
-  width:100%;
-  margin:1rem;
+
+  align-items:center;
+
+  
 }
 
 .slider-mob__prev-btn,
 .slider-mob__next-btn {
-  position:relative;
+  position:absolute;
+  display:flex;
   background-color:white;
   border-radius:50%;
+   top:30vh;
   width:3.5rem;
   height:3.5rem;
   display:flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 
 }
 
 .slider-mob__next-btn {
 float:right;
-margin-top:-3.5rem;
 right:-32rem;
+
 }
 .slider-mob__next-btn img {
   width: 1rem;
+
 }
 .slider-mob__prev-btn  {
-  right:-2rem;
+  left:2rem;
 }
 
 .slider-mob__prev-btn img {
