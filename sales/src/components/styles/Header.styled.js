@@ -73,6 +73,7 @@ display:none;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
+ 
   background: ${({theme})=> theme.colors.darkGrayishBlue};
   
   

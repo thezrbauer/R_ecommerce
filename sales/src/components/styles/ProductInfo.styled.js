@@ -128,8 +128,10 @@ padding-top:3rem;
    }
 
    @media only screen and (max-width: 600px) { 
-    margin:0rem 4rem 5rem;
+    margin:0rem 4rem 4rem;
     
+  
+
     .mob__inline {
       display:flex;
      
@@ -141,6 +143,16 @@ padding-top:3rem;
       margin-top:-2px;
     }
 
+    
+  .product-name {
+   padding:3px; 
+ 
+  }
+  
+  .product-description {
+    padding:8px;
+    
+  }
   
     .desk_btns, .minus, .plus, .quantity {
       display:none;

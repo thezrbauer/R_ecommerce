@@ -3,7 +3,10 @@ import './App.css';
 import Header from './components/Header';
 import {GlobalStyle} from "./components/styles/global.styled.js"
 import { ThemeProvider } from 'styled-components';
-import Content from './components/Content';
+import ProductInfo from './components/ProductInfo';
+import ProductView from './components/ProductView';
+
+
 
 const theme = {
   colors: { 
@@ -20,12 +23,18 @@ const theme = {
 }
 
 
+
+
 function App() {
+
   return (
     <ThemeProvider theme={theme}>
     <GlobalStyle />
      <Header />
-      <Content />
+      <div className="content">
+        <ProductView />
+        <ProductInfo />
+        </div>
     </ThemeProvider>
   );
 }

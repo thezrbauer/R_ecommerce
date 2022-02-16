@@ -11,38 +11,39 @@ import imageProduct4 from "../images/image-product-4-thumbnail.jpg"
 import { ProductViewer } from "./styles/ProductView.styled"
 
 import iconPrevious from "../images/icon-previous.svg"
-
 import iconNext from "../images/icon-next.svg"
 
-export default function ProductView() {
+
+
+
+const ProductView =() => {
     return (
         <ProductViewer>
             <div className="desktop">
-            <div className="img-product" ><img className="img" src={imageProduct}></img></div>
+            <div className="img-product" ><img className="img" src={imageProduct} alt="item"></img></div>
             <div className="img-product1 grid-item"><img className="img" src={imageProduct1} alt="item-1"></img></div>
             <div className="img-product2 grid-item"><img className="img" src={imageProduct2} alt="item-2"></img></div>
             <div className="img-product3 grid-item"><img className="img" src={imageProduct3} alt="item-3"></img></div>
             <div className="img-product4 grid-item"><img className="img" src={imageProduct4} alt="item-4"></img></div>
             </div>
-            <div  className="slider-mob">
-                <div className="slider-mob__bar">
-            <div className="slider-mob__item" ><img className="img" src={imageProduct}></img></div>
-            {/* <div className="slider-mob__item"><img className="img" src={mobileimg2} alt="item-1-mbl"></img></div>
-            <div className="slider-mob__item"><img className="img" src={mobileimg3} alt="item-2-mbl"></img></div>
-            <div className="slider-mob__item"><img className="img" src={mobileimg4} alt="item-3-mbl"></img></div> */}
-            </div>
-            <div className="slider-mob__control">
+            <div className="slider-mob"> 
+              <div className="slider-mob__carousel">
+                 <img src={imageProduct} className="sliderImg" alt="mobile shoe image1"  />,
+                    {/* <img src={mobileimg2} className="sliderImg" alt="mobile shoe image2"  />,
+                    <img src={mobileimg3} className="sliderImg" alt="mobile shoe image3"  />,
+                    <img src={mobileimg4} className="sliderImg" alt="mobile shoe image4"  /> */}
+                  
+                   </div>   
+               
+             <div className="slider-mob__control">
 
-                    <div className="slider-mob__prev-btn">
-                        <img src={iconPrevious} alt="previous product" />
-                    </div>
+                    <div className="slider-mob__prev-btn"><a className="prev" ><img src={iconPrevious} alt="previous product" /></a></div>
+                    <div className="slider-mob__next-btn"><a className="next" ><img src={iconNext} alt="next product" /></a></div>
 
-                    <div className="slider-mob__next-btn">
-                        <img src={iconNext} alt="next product" />
-                    </div>
-            </div>
-            </div>
+                </div>  
+             </div> 
             
         </ProductViewer>
     )
 }
+export default ProductView;

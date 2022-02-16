@@ -9,6 +9,7 @@ export default function ProductInfo() {
       
       <Product>
         <CompanyName>SNEAKER COMPANY</CompanyName>
+        <div className='mobile-action'>
         <h2 className="product-name">Fall Limited Edition Sneakers</h2>
         <p className="product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
         <div className="mob__inline">
@@ -17,6 +18,7 @@ export default function ProductInfo() {
         <p className="markdown-percent">50%</p>
         </div>
         <p className="original-price">$250.00</p>
+        </div>
         </div>
         <div className="desk_btns">
           <div className="gray-btn" ><button className="minus"><img  src={minusIcon} alt="minus"></img></button></div>
@@ -32,7 +34,7 @@ export default function ProductInfo() {
           </div>
           <div className="mob_add-to-cart"><button className="mob_add-cart-btn"><img alt="mob_cart" className="cart-img" src={cartLogoWhite}></img><span className="btn-txt">Add to cart</span></button></div>
             </div>
-     
+           
       </Product>
     )
-}
+} 

@@ -3,6 +3,8 @@ import styled from "styled-components"
 
 export const ProductViewer = styled.div` 
 
+@import "react-alice-carousel/lib/alice-carousel.css";
+
   .desktop {
     display:grid;
     grid-template-columns:repeat(4, 80px);
@@ -37,28 +39,16 @@ export const ProductViewer = styled.div`
     border-radius:0px;
   }
 
-  .slider-mob__item{
-  
-  }
-
-  .slider-mob__item img{
-    width: 100%;
-    object-fit: cover;
-    height:50vh;
-    }
 
   .slider-mob{
-    position:relative;
-    display:inline;
- 
+  display:initial;
+  width:100%;
+  max-width:100%;
+   
+   
 }
 
-.slider-mob__control {
 
-  align-items:center;
-
-  
-}
 
 .slider-mob__prev-btn,
 .slider-mob__next-btn {
@@ -79,7 +69,7 @@ export const ProductViewer = styled.div`
 
 .slider-mob__next-btn {
 float:right;
-right:-32rem;
+right:1rem;
 
 }
 .slider-mob__next-btn img {
@@ -94,7 +84,17 @@ right:-32rem;
   width: 1rem;
   
 }
+
+
+
+.sliderImg{
+  display:block;
+
+ 
+  object-fit:cover;
+  width:100%;
+  height:500px;
 }
 
-
+}
 `
