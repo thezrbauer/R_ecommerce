@@ -43,7 +43,6 @@ export const ProductViewer = styled.div`
   .slider-mob{
   display:initial;
   width:100%;
-  max-width:100%;
    
    
 }
@@ -85,12 +84,14 @@ right:1rem;
   
 }
 
-
+.alice-carousel__stage {
+display:inherit;
+}
 
 .sliderImg{
   display:block;
-
- 
+  margin-left:auto;
+  
   object-fit:cover;
   width:100%;
   height:500px;

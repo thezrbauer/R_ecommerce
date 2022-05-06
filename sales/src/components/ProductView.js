@@ -1,8 +1,8 @@
 import React from "react"
 import imageProduct from "../images/image-product-1.jpg"
-// import mobileimg2 from "../images/image-product-2.jpg"
-// import mobileimg3 from "../images/image-product-3.jpg"
-// import mobileimg4 from "../images/image-product-4.jpg"
+import mobileimg2 from "../images/image-product-2.jpg"
+import mobileimg3 from "../images/image-product-3.jpg"
+import mobileimg4 from "../images/image-product-4.jpg"
 
 import imageProduct1 from "../images/image-product-1-thumbnail.jpg"
 import imageProduct2 from "../images/image-product-2-thumbnail.jpg"
@@ -28,11 +28,11 @@ const ProductView =() => {
             </div>
             <div className="slider-mob"> 
               <div className="slider-mob__carousel">
-                 <img src={imageProduct} className="sliderImg" alt="mobile shoe image1"  />,
+                <img src={imageProduct} className="sliderImg" alt="mobile shoe image1"  />,
                     {/* <img src={mobileimg2} className="sliderImg" alt="mobile shoe image2"  />,
                     <img src={mobileimg3} className="sliderImg" alt="mobile shoe image3"  />,
-                    <img src={mobileimg4} className="sliderImg" alt="mobile shoe image4"  /> */}
-                  
+                    <img src={mobileimg4} className="sliderImg" alt="mobile shoe image4"  />  */}
+                   
                    </div>   
                
              <div className="slider-mob__control">
@@ -40,7 +40,7 @@ const ProductView =() => {
                     <div className="slider-mob__prev-btn"><a className="prev" ><img src={iconPrevious} alt="previous product" /></a></div>
                     <div className="slider-mob__next-btn"><a className="next" ><img src={iconNext} alt="next product" /></a></div>
 
-                </div>  
+                </div> 
              </div> 
             
         </ProductViewer>
